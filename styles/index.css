@@ -211,4 +211,11 @@ a:hover {
             margin-bottom: 20px;
         }
      }
+     .socialMediaIcons {
+        grid-template-columns: auto;
+        align-items: center;
+     }
+     section {
+        margin-bottom: 20px;
+     }
 }
