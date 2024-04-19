@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.topOfPage {
+    margin: 0px 100px 0px 100px;
+    padding: 50px 100px 0px 100px;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 150px;
+}
+.linkOtherPages {
+    display: flex;
+    list-style: none;
+}
+.linkPage {
+    margin-left: 30px;
+}
+.linkPage {
+    text-decoration: none;
+    font-size: 16px;
+    color: hsl(243, 87%, 12%);
+    font-weight: 400;
+}
+p {
+    font-size: 16px;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+main {
+    margin: 20px 100px;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 200px;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+ .gridItem img {
+    width: 400px;
+ }
+ #howFyloWorksLink {
+    display: flex;
+    align-items: center;
+ }
+ #iconArrow {
+    width: 20px; 
+    margin-top: 7px;
+    margin-left: 5px;
+ }
+ input[type="email"] {
+    margin-top: 20px;
+    color: hsl(0, 0%, 75%);
+    height: 20px;
+    width: 220px;
+    height: 30px;
+ }
+ input[type="button"] {
+    margin-top: 20px;
+    color: white;
+    font-family: 'Open Sans';
+    width: 170px;
+    font-weight: 700;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    border-radius: 2px;
+    height: 35px;
+    cursor: pointer;
+ }
+ .citationContainer {
+    box-shadow: 0 0 10px hsl(0, 0%, 75%),
+                0 0 10px hsl(0, 0%, 75%),
+                0 0 10px hsl(0, 0%, 75%),
+                0 0 10px hsl(0, 0%, 75%);
+    margin-top: 40px;
+    padding: 20px;
+    width: 50%;
+    p {
+        font-size: 12px;
+    }
+    
+    img {
+        width: 40px;
+    }
+    border-radius: 5px;
+ }
+ 
+.iconCircle {
+    display: flex;
+    align-items: center;
+    img {width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    }
+    font-size: 10px;
+    .name {
+        margin-left: 5px;
+        font-size: 9px;
+    }
+    .job {
+        font-size: 8px;
+        margin-left: 5px;
+    }
+}
+footer {
+    font-family: 'Raleway', sans-serif;
+}
+.signUp {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(238, 22%, 44%);
+    justify-content: space-between;
+    padding: 200px;
+    .rightSide, .leftSide {
+        width: 40%;
+    }
+    input[type="email"] {
+        width: 70%;
+    }
+}
+.leftSide {
+    color: white;
+}
+.socialMediaIcons {
+    background-color: hsl(243, 87%, 12%);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    padding: 200px;
+    #logoInvers {
+        filter: brightness(0) invert(1);
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+.icons {
+    display: flex;
+    margin: 20px;
+    color: white;
+}
+.iconContact {
+    margin-right: 10px;
+}
+.informations {
+    color: white;
+}
+a:hover {
+    color: blueviolet;
+}
+.wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .topOfPage {
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+    .linkOtherPages {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    main {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .gridItem:first-child {
+        grid-row: 2;
+    }
+    .gridItem:nth-child(4) {
+        grid-row: 3;
+    }
+    input[type="email"], input[type="button"] {
+        width: 130px;
+        align-items: center;
+     }
+     .signUp {
+        display: grid;
+        width: 100%;
+        align-items: center;
+        .whiteP {
+            align-items: center;
+        }
+        .rightSide, .leftSide {
+            width: 100%;
+        }
+        input[type="email"], input[type="button"] {
+            width: 230px;
+        }
+        .whiteP {
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+     }
+}
