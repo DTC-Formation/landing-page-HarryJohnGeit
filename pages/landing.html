@@ -3,7 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Landing Page</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="topOfPage">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="../images/logo.svg" alt="logo">
+          </div>
+          <ul class="linkOtherPages">
+            <li class="listPage">
+              <a href="#" class="linkPage">Features</a>
+            </li>
+            <li class="listPage">
+              <a href="#" class="linkPage">Team</a>
+            </li>
+            <li class="listPage">
+              <a href="#" class="linkPage">Sign in</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="gridItem">
+        <h2>All your files in one secure location, accessible anywhere.</h2><br>
+        <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+        <input type="email" value="Enter your email">
+        <input type="button" value="Get started">
+      </div>
+      <div class="gridItem">
+        <img src="../images/illustration-1.svg" alt="illustration1">
+      </div>
+      <div class="gridItem">
+        <h2>Stay productive, wherever you are</h2><br>
+        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs. <br> Securely share files and folders with friends, family and colleagues for live collaboration. No email attachements required!</p><br>
+        <a href="#" id="howFyloWorksLink">See how Fylo works <span><img src="../images/icon-arrow.svg" alt="arrow" id="iconArrow"></span></a>
+          <article class="citationContainer">
+            <img src="../images/3jvtxsy0.bmp" alt="guillemet">
+            <p class="citation">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+            <span class="iconCircle">
+              <img src="../images/avatar-testimonial.jpg" alt="avatar">
+              <div>
+                <p class="name"><b>Kyle Burton</b></p>
+                <p class="job">Founder & CEO, Huddle</p>
+              </div>
+              
+            </span>
+          </article>
+      </div>
+      <div class="gridItem">
+        <img src="../images/illustration-2.svg" alt="illustration2">
+      </div>
+    </main>
+    <footer>
+      <div class="signUp">
+        <div class="leftSide">
+          <h2 class="whiteH2">Get early today</h2>
+          <p class="whiteP">It only takes a minute to sign up and our free tier is extremly generous. If you have any questions, our support team would be happy to help you. </p>
+        </div>
+        <div class="rightSide">
+          <input type="email" value="Enter your email">
+          <input type="button" value="Get started for free">
+        </div>
+      </div>
+      <div class="socialMediaIcons">
+          <section>
+            <img src="../images/logo.svg" alt="logo" id="logoInvers">
+            <ul>
+              <li class="icons">
+                <img src="../images/icon-phone.svg" alt="Phone" class="iconContact">
+                <p>Phone: +1-543-123-4567</p>
+              </li>
+              <li class="icons">
+                <img src="../images/icon-email.svg" alt="Email" class="iconContact">
+                <p>example@fylo.com</p>
+              </li>
+            </ul>
+          </section>  
+          <section>
+            <ul class="informations">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </section> 
+          <section>
+            <ul class="informations">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </section>
+          <section>
+              <ul class="wrapper">
+                <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+              </ul>
+          </section>
+      </div>
+    </footer>
+  </body>
 </html>
